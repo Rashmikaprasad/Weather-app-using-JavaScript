@@ -2,7 +2,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App - Easy Tutorials</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,6 +35,25 @@
             </div>
         </div>
     </div>
+
+
+<script>
+
+    const apikey = "2fb88b073238e562878d513924afc697";
+    const apiurl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=pannala";
+
+    async function checkweather(){
+        const response = await fetch(apiurl + '&appid=${apikey}');
+        var data = await response.json();
+
+        console. log(data);
+
+    }
+
+</script>
+
+
+
 
 </body>
 
